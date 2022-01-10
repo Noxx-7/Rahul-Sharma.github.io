@@ -1,0 +1,172 @@
+@media (min-width: 576px) {
+    .intro-image img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .intro-image img {
+        width: 500px;
+    }
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    /* --------------------------------------*/
+    /* ----- home page start ----------------*/
+    /* --------------------------------------*/
+    .header>div {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header>div>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        display: none;
+    }
+    nav {
+        flex-direction: row;
+        display: flex !important;
+    }
+    nav a {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .intro-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .intro {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .intro-image {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .intro h1 {
+        font-size: 48px;
+        text-transform: uppercase;
+        color: #353535;
+        margin: 32px 283.5px 16px 0;
+    }
+    .intro h4 {
+        color: #8684a0;
+        margin: -5px 135px 16px 0;
+        text-transform: uppercase;
+    }
+    .intro p {
+        margin: -2px 135px 16px 0;
+    }
+    .btn {
+        margin: 0px 180px 16px 0;
+        padding: 8px 16px;
+        border-radius: 3px;
+        font-weight: bold;
+        cursor: pointer;
+        display: inline-block;
+    }
+    /* --------------------------------------*/
+    /* ----- about page start ----------------*/
+    /* --------------------------------------*/
+    .about-me>div>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 0px;
+    }
+    .about-me-text {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .about-me-numbers {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    /* --------------------------------------*/
+    /* ----- service page start ----------------*/
+    /* --------------------------------------*/
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .service {
+        width: calc(50% - 80px);
+        transition: all 0.4s ease;
+    }
+    .service:hover {
+        background-color: #f1f1f1;
+        box-shadow: 5px 5px 10px #d0d0e0;
+    }
+    .service img {
+        width: 70%;
+    }
+    /* --------------------------------------*/
+    /* ----- portfolio page start ----------------*/
+    /* --------------------------------------*/
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project {
+        height: 200px;
+        width: 50%;
+    }
+    /* --------------------------------------*/
+    /* ----- contact page start ----------------*/
+    /* --------------------------------------*/
+    .contact-us>div>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 32px;
+        grid-row-gap: 0px;
+    }
+    .contact-form {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .map {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    /* --------------------------------------*/
+    /* ----- footer page start ----------------*/
+    /* --------------------------------------*/
+    .social-menu ul {
+        position: relative;
+        top: 50%;
+        left: 88%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+        margin: 0;
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
